@@ -1,0 +1,111 @@
+@charset "UFT-8";
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:navy;
+}
+
+div.clear{
+  clear: both;
+}
+
+#wrap{
+  width:100%;
+  margin:auto; 
+  /* border: 1px solid red;
+  background-color: yellow;  */ 
+  max-width: 1024px;
+  height: auto;
+}
+
+/* 헤더영역 */
+header{
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin-top: 10px;
+}
+header img{
+  width: 100%;
+  border-radius: 5px;
+}
+/* 네비게이션 */
+nav{
+  background-color:rgba(194, 207, 243, 0.623);
+  border-radius: 5px;
+  height: 35px;
+}
+nav ul{
+  list-style-type:none;
+}
+nav ul li{
+  float: left;
+  padding-right: 20px;
+}
+nav ul li a{
+  padding: 6px 5px 5px 10px;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 2px;
+}
+nav ul li a:hover{
+  background-color: #141f85af;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  margin: 2px;
+}
+/* 아티클 */
+article{
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 500px;
+  padding: 3px;
+  float: left;
+  width: 823px;
+}
+article section{
+  border: 1px double dodgerblue;
+  border-radius: 5px;
+  padding: 5px 7px;
+  margin: 5px;
+  float: left;
+  width: 397.3px;
+}
+/* 어사이드 */
+aside{
+  border: 1px solid silver;
+  border-radius: 5px;
+  float: right;
+  height: 500px;
+  width: 200px;
+}
+aside nav{
+  background: none;
+  border: none;
+  padding: 3px;
+  margin: 5px 5px 5px 9px;
+}
+
+aside nav ul li a{
+  display: block;
+  width: 170px;
+}
+aside nav ul li a:hover{
+  background-color: transparent;
+  color: rgb(0, 0, 92);
+  font-weight: bold;
+}
+/* 푸터 */
+footer{
+  background-color: rgba(236, 236, 236, 0.774);
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  font-size: 0.8em;
+  padding: 15px 20px;
+}

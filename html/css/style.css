@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* style.css */
+body{
+  color: blueviolet;
+  font-size: 2em;
+  /* em: 상대적 크기
+    1em : 16px
+    2em : 32px
+  */
+}
+/*
+div 선택해서
+서체
+글자색
+바깥여백 : 1em
+*/
+div{
+  font-family: 궁서체;
+  color: yellowgreen;
+  margin: 1em;
+	font-weight: bold;
+}

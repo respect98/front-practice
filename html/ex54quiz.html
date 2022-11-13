@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex54quiz</title>
+</head>
+<body>
+  <h1>실습</h1>
+  <p>
+    promt로 국어,영어,수학 성적을 입력받아서 성적표를 테이블 형태로 출력하세요 <br>
+    국어: 100점
+    수학: 100점
+    영어: 100점
+    총합계 점수: 300점
+    평균 점수: 100점
+    학점: A 학점
+    <!-- 
+      90<= 평균점수 <=100=> A학점
+      80점대 : B
+      70점대 : C
+      60점대 : D
+      60점미만: F
+     -->
+  
+  </p>
+  <hr color="red">
+  <script>
+    let korean=prompt('국어점수를 입력하세요','100');
+    let math=prompt('수학점수를 입력하세요','100');
+    let english=prompt('영어점수를 입력하세요','100');
+    let n3=parseInt(english);
+    let n2=parseInt(math);
+    let n1=parseInt(korean);
+
+    let sum=n1+n2+n3;
+    let average=sum/3;
+    let grade='';
+    
+    if(90<=average && average<=100){
+      grade="A"
+    }else if(80<=average && average<90){
+      grade="B";
+    }else if(70<=average && average<80){
+      grade="C"
+    }
+    else if(60<=average && average<70){
+      grade="D"
+    }
+    else{
+      grade="F"
+    }
+    
+    
+    let str="<table border='1'>";
+      str+="<tr><th>국어</th><td>"+korean+" 점</td></tr>";
+      str+="<tr><th>수학</th><td>"+math+" 점</td></tr>";
+      str+="<tr><th>영어</th><td>"+english+" 점</td></tr>";
+      str+="<tr><th>총합계 점수</th><td>"+sum+" 점</td></tr>";
+      str+="<tr><th>평균점수</th><td>"+average+" 점</td></tr>";
+      str+="<tr><th>학점</th><td>"+grade+" 학점</td></tr>";
+      str+="</table>";
+      document.write(str);
+
+
+  </script>
+</body>
+</html>
+<!-- ex54quiz.html -->

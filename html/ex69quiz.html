@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ex69quiz.html</title>
+  <style>
+    
+    body{
+      background-color: black;
+      color: #fff;
+    }
+    #btns{
+      text-align: center;
+      width: 50%;
+      /* border: 1px solid red; */
+      margin: auto;
+      padding: 5px;
+      text-align: center;
+    }
+    #btns>span{
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      border: 1px solid white;
+      padding: 5px;
+    }
+    #movies{
+      width: 760px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    #movies>img{
+      background-color: white;
+      width: 150px;
+    }
+    
+  </style>
+
+</head>
+<body>
+  <div id="wrap">
+    <div id="btns">
+      <span id="btn1" onclick="showMovie()">현재 상영작</span>
+      <span id="btnPlay">Play</span>
+      <span id="btnStop">Stop</span>
+    </div>
+    <div id="movies">
+      
+    </div>
+  </div>
+  <script>
+    let movies=['movie1.png','movie2.png','movie3.png','movie4.png','movie5.png'];
+    let obj=document.getElementById('movies');
+    let btnPlay=document.querySelector("#btnPlay");
+    let btnStop=document.querySelector("#btnStop");
+    //showMovie()함수 만들어서 배열에 저장된 요소만큼 반복문 돌면서 이미지<img src='이미지파일명'>
+    //브라우저에 문자열 출력하기
+    let wid=null;
+    let x=20; //x좌표
+    let i=1; //x좌표의 증가치
+   function showMovie(){
+    let str='';
+    for(let i=0; i<movies.length; i++){
+      let movie=movies[i];
+      str+=`<img src="../images/${movie}">`;
+    }
+    obj.innerHTML=str;
+  }
+    // document.write(str); //
+
+    
+    btnPlay.onclick=function(){
+      obj.style.position='absoulte';
+      if(wid==null){
+        wid=setInterval(function(){
+          if(x>=document.body.clientWidth -760){
+            i=-1;
+          }
+          if(x<=0){
+            i=1;
+          }
+          obj.style.left=`${x}px`;
+          x+=i;
+        },20);//0.02초
+      }
+    }
+    btnStop.addEventListener('click',function(){
+      if(wid!=null){
+        clearInterval(wid);
+        wid=null;
+      }
+    })
+  //  ------------------------------------------
+  
+  window.onload=showMovie;
+    
+  </script>
+</body>
+</html>
+<!-- ex69quiz.html -->
+<!-- 현재 상영작, play stop
+play를 누르면 오른쪽으로 현재상영작이 움직임 그러고 어느정도가면 왼쪽으로 옴 그러고 stop누르면 stop
+영화 하나씩 저장해서 배열을 이용해라
+반복문이용해라 -->
