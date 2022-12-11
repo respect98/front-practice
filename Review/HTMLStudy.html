@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>첫 번째 HTML입니다.</h2>
+<hr>
+<h1> h1 첫 번째로 큰 글자(크기 200%)로 표시합니다</h1>
+<h2> h2 두 번째로 큰 글자(크기 150%)로 표시합니다</h2>
+<h3> h3 세 번째로 큰 글자(크기 120%)로 표시합니다</h3>
+<h4> h4 네 번째로 큰 글자(크기 100%)로 표시합니다</h4>
+<h5> h5 다섯 번째로 큰 글자(크기 80%)로 표시합니다</h5>
+<h6> h6 여섯 번째로 큰 글자(크기 70%)로 표시합니다</h6>
+<hr>
+<p><b> b 태그는 굵은 글꼴입니다.</b></p>
+<p><i> i 태그는 기울임 꼴입니다.</i></p>
+<p><em> em 태그는 강조로 표시합니다.</em></p>
+<p><small> small 태그는 작은 글자를 표시합니다</small></p>
+<p><mark> mark 태그는 음영</mark>으로 표시합니다</p>
+<p><strong> strong 태그는 문자를 강력하게 강조합니다</strong></p>
+<p>X<sub>2</sub>(sub: 아래 첨자)와 Y<sup>2</sup>(sup: 위첨자)입니다</p>
+<p>ins 태그는 <ins>추가한 내용을 밑줄로</ins> 표시합니다</p>
+<p><del>del 태그는 취소선을 표시합니다.</del></p>
+<hr>
+<p>space : &nbsp; (공백:nbsp)</p>
+<p>less than : &lt;(lt)</p>
+<p>greater than: &gt;(gt)</p>
+<p>ampersand: &amp;(amp)</p>
+<p>cent: &cent;</p>
+<p>pound: &pound;</p>
+<p>yen: &yen;</p>
+<p>euro: &euro;</p>
+<p>section: &sect;(sect)</p>
+<p>copyright: &copy;(copy)</p>
+<p>registered trademark: &reg;(reg)</p>
+<hr>
+<div>div</div>
+<div>가나다라</div>
+<div>1234</div>
+
+<p>p</p>
+<p>가나다라</p>
+<p>1234</p>
+ 
+<span>span</span>
+<span>가나다라</span>
+<span>1234</span>
+
+<hr>
+<div style="border:1px dotted red">
+	<h2>백두산 호랑이</h2>
+	<br>
+	높은 산의  숲이 우거진 곳에서  사는 고양잇과의 포유류로
+	<span style="color: red; font-weight: bold">한국 호랑이</span>라고도 한다.
+	<br><br>
+</div>
+<hr>
+<img src="image/mouse.jpg">
+<img src="image/mouse.jpg" width="150px" height="150px">
+<img src="image/mouse1.jpg" alt="미키 마우스">
+<hr>
+<figure>
+	<img alt="w3c사이트" src="image/w3c.png" width="75">
+	<figcaption>[그림1] w3c사이트</figcaption>
+</figure>
+<hr>
+<ul>
+	<li>Cafe latte</li>
+	<li>Americano</li>
+	<li>Espresso</li>
+</ul>
+<hr>
+<table border="1">
+	<caption align="top">교재 가격표</caption>
+	<thead>
+		<tr>
+			<th>서적명</th>
+			<th>출판사</th>
+			<th>가격</th>
+			<th>기타</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="2">합계</td>
+			<td>107,000원</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>HTML5</td>
+			<td>공갈닷컴</td>
+			<td>55,000원</td>
+			<td rowspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>CSS3</td>
+			<td>남가람북스</td>
+			<td>32,000원</td>
+		</tr>
+		<tr>
+			<td>JavaScript</td>
+			<td>야메루 출판사</td>
+			<td>20,000원</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<iframe src="https://www.namgarambooks.co.kr">
+<p>이 브라우저는 iframe을 지원하지 않습니다</p>
+</iframe>
+<hr>
+<form action="Test.html" method="get">
+<table>
+	<tr>
+		<td>아이디</td>
+		<td><input type="text" name="id" size="20"></td>
+	</tr>
+	<tr>
+		<td>비밀번호</td>
+		<td><input type="password" name="pwd" size="20"></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="button" value="목록">
+			<input type="submit" value="전송">
+			<input type="reset" value="취소">  
+		</td>
+	</tr>
+</table>
+</form>
+<hr>
+<form>
+	<label>이름 <input type="text" name="name"></label><br><br>
+	
+	<label for="myName">이름</label>
+	<input type="text" name="name" id="myName">
+</form>
+<hr>
+<div id="header"><h1> Web Publisher </h1></div>
+<div id="nav">
+	<ul>
+		<li><a href="#"> HTML5</a>
+		<li><a href="#"> CSS3</a>
+		<li><a href="#"> JAVASCRIPT</a>
+		<li><a href="#"> jQuery</a>
+	</ul>
+</div>
+<div id="section">
+<h2>HTML5이란?</h2>
+<div id="article">1. HTML개요</div>
+<div id="article">2. HTML개요</div>
+</div>
+<div id="aside">
+<h3>보충설명</h3>
+<p>
+	HTML5, CSS3, JavaScript는 front-end입니다.<br>
+	PHP, JSP, ASP는 back-end입니다
+</p>
+<div id="footer">
+	<p>address and @copyright</p>
+</div>
+</div>
+<hr>
+<header><h1> Web Publisher </h1></header>
+<nav>
+	<ul>
+		<li><a href="#"> HTML5</a>
+		<li><a href="#"> CSS3</a>
+		<li><a href="#"> JAVASCRIPT</a>
+		<li><a href="#"> jQuery</a>
+	</ul>
+</nav>
+<section>
+<h2>HTML5이란?</h2>
+<div id="article">1. HTML개요</div>
+<div id="article">2. HTML개요</div>
+</section>
+<aside>
+<h3>보충설명</h3>
+<p>
+	HTML5, CSS3, JavaScript는 front-end입니다.<br>
+	PHP, JSP, ASP는 back-end입니다
+</p>
+</aside>
+<footer>
+	<p>address and @copyright</p>
+</footer>
+</body>
+</html>
